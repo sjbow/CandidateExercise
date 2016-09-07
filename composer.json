@@ -1,0 +1,8 @@
+{
+"autoload":{
+	"psr-4":{"Exads\\": "src/"}
+},
+"require":{
+        "nesbot/carbon": "^1.21"
+    }
+}
