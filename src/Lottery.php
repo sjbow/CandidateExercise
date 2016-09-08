@@ -6,6 +6,14 @@ use Carbon\Carbon;
 
 class Lottery{
 
+	/**
+	 * If a date is provided it checks to see when the lottery is
+	 * from that date otherwise it uses the current date
+	 * @author <sbow>
+	 * @added on the 27/05/2016
+	 * @param null $date
+	 * @return string
+	 */
 	public function whenIsNextLottery($date = null){
 
 		if($date == null){

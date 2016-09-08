@@ -28,7 +28,7 @@ class ElementArray{
 	 * @added on the 27/05/2016
 	 * @return array
 	 */
-	public function createArray(){
+	private function createArray(){
 		$array = range(1, $this->number_of_elements);
 		shuffle($array);
 		return $array;

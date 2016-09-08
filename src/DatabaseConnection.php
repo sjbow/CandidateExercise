@@ -12,6 +12,9 @@ class DatabaseConnection{
 	private $password = "ExadsPassword";
 	private $database = "Exads";
 
+	/**
+	 * DatabaseConnection constructor.
+	 */
 	public function __construct(){
 		//Create connection
 		$this->conn = new mysqli($this->host, $this->username, $this->password, $this->database);
@@ -23,7 +26,7 @@ class DatabaseConnection{
 	 * @added on the 27/05/2016
 	 * @return string
 	 */
-	public function connectionTest(){
+	private function connectionTest(){
 		if (mysqli_connect_error()) {
 			die("Connection failed: " . $this->conn->connect_error);
 		}
